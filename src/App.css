@@ -1,0 +1,127 @@
+/* App.css - Improved Dashboard Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9; /* Light green farm-friendly background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: #2e7d32; /* Dark Green */
+  color: white;
+  width: 250px;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #388e3c; /* Medium Green */
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+  background: #1b5e20; /* Darker Green */
+}
+
+/* Main Content Styling */
+.main-content {
+  margin-left: 270px; /* Offset for sidebar */
+  width: calc(100% - 270px);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #1b5e20;
+}
+
+/* Sensor Card Styling */
+.sensor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sensor-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sensor-card:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  margin: 10px 0;
+  color: #2e7d32;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+/* Control Panel Styling */
+.control-panel {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f1f8e9;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.control-button {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.control-button:hover {
+  background: #1b5e20;
+}
